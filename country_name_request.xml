@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gs="http://kirillkotov.com/soapspringbootlect/dto">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <gs:getCountryNameRequest>
+            <gs:name>Spain</gs:name>
+        </gs:getCountryNameRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

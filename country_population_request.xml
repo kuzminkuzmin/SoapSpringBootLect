@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gs="http://kirillkotov.com/soapspringbootlect/dto">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <gs:getCountryPopulationRequest>
+            <gs:population>10</gs:population>
+        </gs:getCountryPopulationRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

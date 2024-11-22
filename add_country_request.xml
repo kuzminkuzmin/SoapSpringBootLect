@@ -1,0 +1,15 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gs="http://kirillkotov.com/soapspringbootlect/dto"
+                  xmlns:ts="http://kirillkotov.com/soapspringbootlect/model">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <gs:postCountryRequest>
+            <gs:country>
+                <ts:name>Russia</ts:name>
+                <ts:population>10</ts:population>
+                <ts:capital>Moscow</ts:capital>
+                <ts:currency>EUR</ts:currency>
+            </gs:country>
+        </gs:postCountryRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

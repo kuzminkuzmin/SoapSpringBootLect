@@ -1,0 +1,48 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://kirillkotov.com/soapspringbootlect/example/dto"
+           elementFormDefault="qualified"
+           xmlns:tns="http://kirillkotov.com/soapspringbootlect/example/model" >
+
+    <xs:import namespace="http://kirillkotov.com/soapspringbootlect/example/model"
+                schemaLocation="model.xsd"/>
+
+    <xs:element name="getCountriesResponse">
+        <xs:complexType>
+            <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="name" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getCountryNameRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getCountryPopulationRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="population" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getCountryResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="country" type="tns:country"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="postCountryRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="country" type="tns:country"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
